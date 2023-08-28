@@ -33,7 +33,7 @@ if __name__ == "__main__":
         match_thresh (float): Matching threshold for tracking in bytetrack. Default: 0.5
         time_check_state (float): Time to update state of ship (second). Default: 1.5
         train (bool): Task is training. Default: False
-        
+        epoch (int): Num of epoch. Default: 50
     '''
     parser = argparse.ArgumentParser(prog='Boat-detect',
                                      epilog='Text at the bottom of help')

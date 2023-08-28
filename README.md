@@ -77,6 +77,8 @@ The project supports the following command-line arguments:
 - `-track_buffer`: Buffer to calculate when to remove tracks (default: 30)
 - `-match_thresh`: Matching threshold for tracking (default: 0.5)
 - `-time-check-state`: Time to reset state (default: 1.5)
+- `-train`: Task is training (default: False)
+- `-epoch`: Num epochs (default: 50)
 
 Explain each argument in detail, including its purpose, default value, and any constraints or limitations.
 
@@ -106,7 +108,13 @@ nc: num of class
 names: Array of name each class
 ```
 
-### Examples
+### Train
+
+```bash
+python main.py -train -epoch 50
+```
+
+### Detection and Tracking
 
 ```bash
 python main.py -detect -input 377.png -output output
